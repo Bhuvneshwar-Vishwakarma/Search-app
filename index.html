@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/css/style.min.css" />
+    <script src="./js/main.js" type="module"></script>
+    <title>SearchMe</title>
+  </head>
+  <body>
+    <main>
+      <section class="searchEntry">
+        <h2 class="offscreen">Search Term Entry</h2>
+        <div class="logo" aria-hidden="true">
+          <span class="blue">s</span>
+          <span class="red">e</span>
+          <span class="yellow">a</span>
+          <span class="blue">r</span>
+          <span class="green">c</span>
+          <span class="red">h</span>
+        </div>
+
+        <form id="searchBar" class="searchBar" role="search">
+          <input id="search" type="text" autocomplete="off" role="searchbox" />
+          <div
+            id="clear"
+            class="none button clear"
+            role="button"
+            tabindex="0"
+            aria-label="Clear search terms"
+          >
+            <i class="fas fa-times"></i>
+          </div>
+          <button
+            id="searchButton"
+            class="button searchButton"
+            type="submit"
+            aria-label="Submit button"
+          >
+            <i class="fas fa-search blue"></i>
+          </button>
+        </form>
+      </section>
+
+      <section class="results">
+        <div class="statsBar">
+          <div id="stats" class="stats"></div>
+        </div>
+
+        <div id="searchResults" class="searchResults">
+          <!-- <div class="resultItem">
+            <div class="resultTitle">
+              <a href="">Dachsund</a>
+            </div>
+
+            <div class="resultContents">
+              <div class="resultImage">
+                <img
+                  src="https://upload.wikipedia.org/wikipedia/commons/thumb/a/a8/Mao-the-dachshund-wikipedia.png/50px-Mao-the-dachshund-wikipedia.png"
+                  alt="Dachsund"
+                />
+              </div>
+
+              <div class="resultText">
+                <p class="resultDescription">
+                </p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Powered by
+        <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>
+      </p>
+    </footer>
+  </body>
+</html>
